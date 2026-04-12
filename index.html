@@ -1,117 +1,124 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Ruzicka | Portfolio</title>
+    <title>BladeBud.dev</title>
     <style>
         :root {
-            --bg-color: #f4f4f9;
-            --text-color: #333333;
-            --accent-color: #0056b3;
-            --box-bg: #ffffff;
+            --bg: #000000;
+            --panel: #101010;
+            --text: #00ff66;
+            --accent: #00ccff;
+            --warning: #ffcc00;
         }
-        
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-
-        header {
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        h1 {
-            margin: 0 0 0.5rem 0;
-            color: var(--text-color);
-        }
-
-        .subtitle {
-            font-family: monospace;
-            color: var(--accent-color);
-            font-size: 1.1rem;
             margin: 0;
+            padding: 16px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Courier New", Courier, monospace;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            border: 2px solid var(--text);
+            background: var(--panel);
+            padding: 16px;
+        }
+
+        h1, h2 {
+            margin: 0 0 10px 0;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        pre {
+            margin: 0 0 16px 0;
+            white-space: pre-wrap;
         }
 
         .section {
-            background: var(--box-bg);
-            padding: 1.5rem;
-            border-radius: 6px;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px dashed var(--text);
+            padding: 12px;
+            margin-bottom: 12px;
         }
 
-        h2 {
-            margin-top: 0;
-            color: var(--accent-color);
-            font-size: 1.3rem;
+        .blink {
+            animation: blink 1s steps(1) infinite;
+            color: var(--warning);
+            font-weight: bold;
         }
 
-        ul {
-            padding-left: 1.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
         }
 
         a {
-            color: var(--accent-color);
-            text-decoration: none;
+            color: var(--accent);
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #ffffff;
         }
 
-        code {
-            font-family: monospace;
-            background-color: #e9ecef;
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            font-size: 0.9em;
+        .counter {
+            color: #ffffff;
+            background: #222;
+            display: inline-block;
+            padding: 4px 8px;
+            border: 1px solid var(--text);
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>BladeBud Developer Zone</h1>
+        <pre>
+===============================================
+   WELCOME TO MY INTERNET CORNER (EST. 2001)
+===============================================
+        </pre>
 
-    <header>
-        <h1>Adam Ruzicka</h1>
-        <p class="subtitle">> Mikroelektronika | Matematika | Programování</p>
-    </header>
+        <div class="section">
+            <span class="blink">UNDER CONSTRUCTION</span>
+            <p>Building code, breaking stuff, learning fast.</p>
+        </div>
 
-    <div class="section">
-        <h2>O mně</h2>
-        <p>Věnuji se studiu a aplikaci mikroelektroniky a komunikačních technologií. Zaměřuji se na logické řešení problémů, využívání matematických aparátů a softwarový vývoj pro analýzu a zpracování dat.</p>
+        <div class="section">
+            <h2>About</h2>
+            <p>Hi, I am BladeBud — a developer who likes clean code, useful tools, and classic web vibes.</p>
+        </div>
+
+        <div class="section">
+            <h2>Current Stack</h2>
+            <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>Git + GitHub</li>
+                <li>Linux terminal workflow</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Links</h2>
+            <p><a href="https://github.com/BladeBud" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Visitor Counter</h2>
+            <div class="counter">0001337</div>
+        </div>
     </div>
-
-    <div class="section">
-        <h2>Vybrané projekty</h2>
-        <ul>
-            <li>
-                <strong>Návrh logických obvodů:</strong> 
-                Implementace a testování hardwarových architektur pomocí HDL.
-            </li>
-            <li>
-                <strong>Algoritmizace datových přenosů:</strong> 
-                Optimalizace procesů pro zajištění integrity dat a zpracování signálu.
-            </li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Kontakt</h2>
-        <ul>
-            <li>GitHub: <a href="https://github.com/vase-uzivatelske-jmeno">github.com/BladeBud</a></li>
-        </ul>
-    </div>
-
 </body>
 </html>
