@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denmark Guide | Dev Zone</title>
+    <style>
+        .blink { animation: blink 1s steps(1) infinite; color: var(--warning); font-weight: bold; }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adam Růžička // Denmark</h1>
+        <nav>
+            <a href="index.html">[ Home / Pro ]</a>
+            <a href="study.html">[ Study Materials ]</a>
+            <a href="denmark.html" class="active">[ Denmark Guide ]</a>
+            <a href="hobbies.html">[ Hobbies ]</a>
+        </nav>
+
+        <div class="section">
+            <h2>Denmark Guide</h2>
+            <span class="blink">WORK IN PROGRESS</span>
+            <h3>ITU Copenhagen</h3>
+            <ul>
+        
+            </ul>
+            <h3>Logistics</h3>
+            <ul>
+          
+                <li>CPR Registration and NemID/MitID setup.</li>
+                <li>Public transport (Rejsekort).</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
