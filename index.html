@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BladeBud.dev</title>
+    <title>Adam Růžička | Dev Zone</title>
     <style>
         :root {
             --bg: #000000;
@@ -15,6 +15,10 @@
 
         * {
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -41,9 +45,28 @@
             letter-spacing: 1px;
         }
 
+        h3 {
+            margin: 10px 0 5px 0;
+            color: var(--text);
+            text-decoration: underline;
+        }
+
         pre {
             margin: 0 0 16px 0;
             white-space: pre-wrap;
+        }
+
+        nav {
+            margin-bottom: 20px;
+            border-bottom: 1px dashed var(--text);
+            padding-bottom: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            font-weight: bold;
         }
 
         .section {
@@ -66,10 +89,17 @@
 
         a {
             color: var(--accent);
+            text-decoration: none;
         }
 
         a:hover {
             color: #ffffff;
+            background: var(--accent);
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
         }
 
         .counter {
@@ -84,42 +114,83 @@
 </head>
 <body>
     <div class="container">
-        <h1>BladeBud Developer Zone</h1>
+        <h1>Adam Růžička // Dev Zone</h1>
         <pre>
 ===============================================
-   WELCOME TO MY INTERNET CORNER (EST. 2001)
+   SYSTEM ONLINE. WELCOME TO MY CORNER.
 ===============================================
         </pre>
 
-        <div class="section">
-            <span class="blink">UNDER CONSTRUCTION</span>
-            <p>Building code, breaking stuff, learning fast.</p>
+        <nav>
+            <a href="#about">[ About ]</a>
+            <a href="#stack">[ Stack & Infra ]</a>
+            <a href="#study">[ Study Materials ]</a>
+            <a href="#denmark">[ Denmark Guide ]</a>
+            <a href="#hobbies">[ Hobbies ]</a>
+        </nav>
+
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am Adam Růžička, a developer studying Data Science at ITU Copenhagen. I focus on backend development, system configuration, mathematics, and algorithmic models.</p>
         </div>
 
-        <div class="section">
-            <h2>About</h2>
-            <p>Hi, I am BladeBud — a developer who likes clean code, useful tools, and classic web vibes.</p>
-        </div>
-
-        <div class="section">
-            <h2>Current Stack</h2>
+        <div id="stack" class="section">
+            <h2>Current Stack & Infrastructure</h2>
             <ul>
-                <li>HTML / CSS / JavaScript</li>
-                <li>Git + GitHub</li>
-                <li>Linux terminal workflow</li>
+                <li><strong>OS & Environment:</strong> Arch Linux, Hyprland, Waybar, Eww</li>
+                <li><strong>Editor:</strong> Neovim (Lazy.nvim, Catppuccin Mocha, LuaSnip) / VS Code</li>
+                <li><strong>Languages:</strong> C, C++, Java (Project Reactor), Python</li>
+                <li><strong>Database:</strong> PostgreSQL with jOOQ</li>
+                <li><strong>Home Server:</strong> Docker, Portainer, Samba NAS, Pi-hole, WireGuard, ZimaOS</li>
+            </ul>
+        </div>
+
+        <div id="study" class="section">
+            <h2>Study Materials & Topics</h2>
+            <h3>Mathematics</h3>
+            <ul>
+                <li>Linear Algebra</li>
+            </ul>
+            <h3>Data Science</h3>
+            <ul>
+
+            </ul>
+            <h3>Reading List</h3>
+            <p>Productivity, Systems Thinking, Philosophy (e.g., <em>Deep Work</em>, <em>Meditations</em>, <em>Fooled by Randomness</em>).</p>
+        </div>
+
+        <div id="denmark" class="section">
+            <h2>Denmark Guide</h2>
+            <span class="blink">WORK IN PROGRESS</span>
+            <h3>ITU Copenhagen</h3>
+            <ul>
+                <li>Campus navigation and facility access.</li>
+                <li>Study workspace configurations (tmux / shell scripts).</li>
+            </ul>
+            <h3>Logistics</h3>
+            <ul>
+                <li>CPR Registration and NemID/MitID setup.</li>
+                <li>Public transport (Rejsekort).</li>
+            </ul>
+        </div>
+
+        <div id="hobbies" class="section">
+            <h2>Out of Bounds (Hobbies)</h2>
+            <ul>
+                <li><strong>Climbing:</strong> Bouldering, Kilter Board, Moonboard. Hangboarding.</li>
+                <li><strong>Strength Training:</strong> </li>
+                <li><strong>Music:</strong> </li>
+                <li><strong>Gaming:</strong> Chess, OpenTTD (transport network engineering).</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Links</h2>
+             <p><a href="https://www.linkedin.com/in/adam-r%C5%AF%C5%BEi%C4%8Dka-a2b066271/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
             <p><a href="https://github.com/BladeBud" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
         </div>
 
-        <div class="section">
-            <h2>Visitor Counter</h2>
-            <p>Retro static display for old-school style.</p>
-            <div class="counter">0001337</div>
-        </div>
+    
     </div>
 </body>
 </html>
